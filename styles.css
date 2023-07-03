@@ -31,8 +31,9 @@ p {
 /* CONTAINER =============================== */
 .container {
 	width: 100%;
-	max-width: 1179px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 /* HEADER =================================*/
@@ -96,7 +97,6 @@ p {
 	justify-content: center;
 
 	background: #323550 url('img/intro_bg.jpg') center no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	padding-top: 100px;
 }
@@ -472,7 +472,7 @@ p {
 	color: #fff;
 }
 
-/* COPYRIGHT ================================== */
+/* COPYRIGHT ========================================== */
 .copyright {
 	background-color: #313454;
 	padding: 20px 0;
@@ -496,4 +496,32 @@ p {
 .copyright__span:hover {
 	color: #ddd497;
 	text-shadow: 1px 1px 15px #d7bf45;
+}
+
+/* BURGER ============================================= */
+.burger {
+	display: none;
+}
+
+/* MEDIA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (max-width: 991px) {
+	.conatainer {
+	}
+	/* NAV */
+	.nav {
+		display: none;
+	}
+
+	/* BURGER */
+	.burger {
+		display: block;
+	}
+
+	/* INTRO */
+	.intro__title {
+		font-size: 40px;
+	}
+	.intro__subtitle {
+		font-size: 14px;
+	}
 }
