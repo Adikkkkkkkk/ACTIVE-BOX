@@ -47,6 +47,19 @@ p {
 	height: 100px;
 }
 
+.header.fixed {
+	position: fixed;
+	background-color: #323550;
+	height: auto;
+}
+
+.header.fixed .header__inner {
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	border-bottom: 0;
+}
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
