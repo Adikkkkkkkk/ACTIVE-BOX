@@ -8,6 +8,9 @@ $(function () {
 	let nav = $('#nav')
 	let navToggle = $('#navToggle')
 
+	// BURGER
+	let burgerItem = $('#burgerItem')
+
 	checkScroll(scrollPos, headerH)
 
 	$(window).on('scroll resize', function () {
@@ -34,6 +37,7 @@ $(function () {
 		let elementOffset = $(elementID).offset().top
 
 		nav.removeClass('show')
+		burgerItem.removeClass('show')
 
 		$('html, body').animate(
 			{
@@ -49,6 +53,8 @@ $(function () {
 		event.preventDefault()
 
 		nav.toggleClass('show')
+		// BOORGIR TOGGLE
+		burgerItem.toggleClass('show')
 	})
 
 	// REVIEWS https://kenwheeler.github.io/slick/
